@@ -1,0 +1,38 @@
+.floatingLabel {
+  position: relative;
+}
+
+.floatingLabel input {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #000;
+  }
+}
+
+.floatingLabel label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  background: white;
+  padding: 0 5px;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.floatingLabel input:focus + label,
+.floatingLabel input:not(:placeholder-shown) + label {
+  top: -1px;
+  font-size: 12px;
+  color: #000;
+}
