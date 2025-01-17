@@ -1,0 +1,22 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  margin: 0 20px;
+}
+
+.formAddContactButton {
+  background-color: tan;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: transform 0.3s ease 0.1s, background-color 0.3s ease 0.1s;
+
+  &:hover {
+    background-color: darkgoldenrod;
+    cursor: pointer;
+    transform: scale(1.04);
+  }
+}
